@@ -12,4 +12,11 @@
       group: root
       mode: 0744
 
+- name: Generate index.html
+  template:
+      src: index.html.j2
+      dest: /var/www/html/index.html
+      owner: root
+      group: root
+      mode: 0744
 
