@@ -1,0 +1,19 @@
+This ansible playbook installs, configs, and spins up nginx on your server.
+
+Prerequisite:
+
+- From the server running this playbook, i.e. the ansible host:
+
+	-- Install Ansible using sudo apt install -y ansible
+
+	-- Create a new directory structure for this project, e.g. mkdir -p nginx_ansible
+
+
+- To define the target server where nginx is gonna be installed:
+
+	-- under roles/nginx/vars/main.yaml, set SERVER_NAME as the public address of the target
+
+- Make sure the target accept ssh from the ansible host
+
+- Make sure the target accept http from the ansible host to view the generated html page
+
